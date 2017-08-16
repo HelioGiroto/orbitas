@@ -150,17 +150,8 @@ function busca_coincidencias {
 	echo "As informacoes acima foram gravadas no arquivo: Jupiter-Venus.txt"
 	echo
 
-
-
-
-
-
-
-
-
 	echo "**********************  *  *****************************"
 	echo
-
 
 	echo "Coincidências EXATAS entre Júpiter, Vênus e Marte:"
 	echo " (Datas que estão no mesmo lugar que em 23/09/17"
@@ -252,8 +243,6 @@ function cria_arq_datas {
 		echo
 		exit
 	fi
-
-
 }
 
 
@@ -278,7 +267,6 @@ nos próximos $anos ANOS!."
 		echo
 		exit
 	fi
-
 }
 
 function arredonda {
