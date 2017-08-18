@@ -13,7 +13,7 @@ https://github.com/HelioGiroto/orbitas/blob/master/compara_orbitas.sh
 
 BREVE: O mesmo em Python.
 _________________________________________
-Apêndice (Arquivos importantes - caso não se executa em MacOs ou Windows OS):
+##Apêndice (Arquivos importantes - caso não se executa em MacOs ou Windows OS):##
 
 1000 anos de órbitas de Júpiter\*:https://github.com/HelioGiroto/orbitas/blob/master/Jupiter_datas.txt
 
@@ -21,4 +21,4 @@ Apêndice (Arquivos importantes - caso não se executa em MacOs ou Windows OS):
 
 1000 anos de órbitas de Vênus\*:  https://github.com/HelioGiroto/orbitas/blob/master/Venus_datas.txt
 
-\*Quando estará na Constelação Virgem.
+\*Quando estarão na Constelação Virgem (em mil anos próximos).
