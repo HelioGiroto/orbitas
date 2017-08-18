@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Este script faz uma comparação entre os calendarios judeu e muçulmano para depois cruzar as informações e encontrar em quais ocasiões as duas culturas comemoram seu Ano Novo num mesmo dia.
+# Este script faz uma comparação entre os calendarios judeu e muçulmano para 
+# depois cruzar as informações e encontrar em quais ocasiões as duas culturas comemoram seu Ano Novo num mesmo dia.
 
 # O QUE SERÁ INSTALADO PARA RODAR ESTE PROGRAMA:
 # 
