@@ -23,3 +23,5 @@ _________________________________________
 1000 anos de órbitas de Vênus\*:  https://github.com/HelioGiroto/orbitas/blob/master/Venus_datas.txt
 
 \*Quando estarão na _Constelação Leão_ (em mil anos próximos).
+
+H.G.C.
