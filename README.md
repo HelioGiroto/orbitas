@@ -11,6 +11,11 @@ https://github.com/HelioGiroto/orbitas/blob/master/calcula_orbitas.sh
 2a. parte: Comparação das órbitas para encontrar alinhamentos comúns: 
 https://github.com/HelioGiroto/orbitas/blob/master/compara_orbitas.sh
 
+Além dos eventos astronômicos, o programa calculará outras coincidências que ocorrem em 23/09/2017:
+
+3a. parte: Encontrar os anos em comúm em que o Rosh Hashana e o Muharram são num mesmo dia (em 1000 anos):
+https://github.com/HelioGiroto/orbitas/blob/master/AnoNovoJudeuMuculmano.sh
+
                                         -BREVE: O mesmo em linguagem Python.
 
 _________________________________________
@@ -23,5 +28,7 @@ _________________________________________
 1000 anos de órbitas de Vênus\*:  https://github.com/HelioGiroto/orbitas/blob/master/Venus_datas.txt
 
 \*Quando estarão na _Constelação Leão_ (em mil anos próximos).
+
+
 
 H.G.C.
