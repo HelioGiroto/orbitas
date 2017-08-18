@@ -22,4 +22,4 @@ _________________________________________
 
 1000 anos de órbitas de Vênus\*:  https://github.com/HelioGiroto/orbitas/blob/master/Venus_datas.txt
 
-\*Quando estarão na Constelação Virgem (em mil anos próximos).
+\*Quando estarão na _Constelação Virgem_ (em mil anos próximos).
