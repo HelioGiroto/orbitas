@@ -16,7 +16,9 @@ _________________________________________
 Apêndice (Arquivos importantes - caso não se executa em MacOs ou Windows OS):
 
 1000 anos de órbitas de Júpiter\*:https://github.com/HelioGiroto/orbitas/blob/master/Jupiter_datas.txt
+
 1000 anos de órbitas de Marte\*:  https://github.com/HelioGiroto/orbitas/blob/master/Marte_datas.txt
+
 1000 anos de órbitas de Vênus\*:  https://github.com/HelioGiroto/orbitas/blob/master/Venus_datas.txt
 
 \*Quando estará na Constelação Virgem.
