@@ -1,4 +1,13 @@
 # Órbitas
+Arquivo que realmente FUNCIONA é este: https://github.com/HelioGiroto/orbitas/blob/master/calcula_orbita.py
+
+Feito em Python.
+
+Infelizmente, levaria uns 50 anos para calculara "na unha" as órbitas! Não quero quebrar o record de Kepler! (rsrsrs). O máximo que cheguei foi calcular com mais precisão possível a órbita de Vênus! É uma "criptografia" do Eterno muito dificil para mim atualmente. Ainda não podemos contar com nenhum módulo pronto de cálculo no BASH, por isso, tive que buscar a solução em PYTHON. MAS ENCONTREI!!!!! Logo termino todo o código.
+Desculpas aos meus colegas.
+
+...... Texto antigo segue abaixo .......
+
 Cálculo das órbitas dos planetas a partir de 23/Setembro de 2017 - Linguagem BASH - Sheel Script
 
 Download: https://github.com/HelioGiroto/orbitas/archive/master.zip
