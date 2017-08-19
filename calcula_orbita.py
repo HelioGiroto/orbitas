@@ -24,7 +24,7 @@ for rep in range(2):		# Para 2 repetições, ou seja 2 anos. Poderia ser 1000 an
 		arq=open("jupiter.txt", "a+")
 		arq.write(str(data) + str("; ") + str(constelacao) + str("; ") + str(AR) + str("; ") + str(DEC))
 		arq.write('\n')
-		dia += 1		# Aumenta um dia para chegar aos 366
+		dia += 1		# Acrescenta um dia na data em questao...
 arq.close()			# Nunca esquecer de fechar arquivo...
 
 # Helio Giroto
