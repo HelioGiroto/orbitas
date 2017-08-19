@@ -6,8 +6,7 @@ print()
 
 jp=ephem.Jupiter()		# jp será o codinome para Jupiter.
 
-#dia=ephem.Date('2017/9/23')	# Opção
-dia=ephem.Date()		# HOJE
+dia=ephem.Date('2017/9/23')	# Data de inicio dos cálculos
 
 for rep in range(2):		# Para 2 repetições, ou seja 2 anos. Poderia ser 1000 anos!
 	for i in range(366):	# Repete 366 vezes (em caso de ano bissexto)
