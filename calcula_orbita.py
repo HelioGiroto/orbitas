@@ -6,7 +6,6 @@ print()
 
 jp=ephem.Jupiter()		# jp será o codinome para Jupiter.
 
-#ano = 2017
 #dia=ephem.Date('2017/9/23')	# Opção
 dia=ephem.Date()		# HOJE
 
