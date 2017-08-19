@@ -44,7 +44,7 @@ else:
 	print('Opção inválida\n')
 	exit()
 
-print (nome)
+print (nome, "escolhido!")
 
 print ("\nA PARTIR DE QUE DATA ??? - Formato: dd/mm/aaaa *")
 print ("\n*Obs.: \n Se o DIA ou o MÊS for de 1 a 9, acrescente antes o número 0. Ex.: 05/09/2017")
