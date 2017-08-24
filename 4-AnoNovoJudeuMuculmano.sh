@@ -27,7 +27,7 @@ function instalador {
 		sleep 3
 		sudo apt-get install -y hdate
 		sudo apt-get install -y itools
-		sed -i 's/^instalador/#instalador/' AnoNovoJudeuMuculmano.sh		# Nome desse script.
+		sed -i 's/^instalador/#instalador/' 4-AnoNovoJudeuMuculmano.sh		# Nome desse script.
 		echo
 	else
 		echo
