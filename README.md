@@ -1,11 +1,11 @@
 # Órbitas
 
-Cálculo das órbitas dos planetas do Sistema Solar e comparação com o evento de 23/Setembro de 2017
+### Cálculo das órbitas dos planetas do Sistema Solar e comparação com o evento de 23/Setembro de 2017
 (Linguagem PYTHON e BASH)
 
 Download de toda pasta ----->> https://github.com/HelioGiroto/orbitas/archive/master.zip
 
-O programa está versão BETA (testes) e faz o cálculo das órbitas dos planetas *Júpiter*, *Marte*, e *Vênus*, *Mercúrio*, além da *Lua* e o *Sol* e busca ocorrências semelhantes a partir do dia *23/Setembro/2017*. 
+O programa está na versão BETA (testes) e faz o cálculo das órbitas dos planetas *Júpiter*, *Marte*, e *Vênus*, *Mercúrio*, além da *Lua* e o *Sol* e busca ocorrências semelhantes a partir do dia *23/Setembro/2017*. 
 
 1a. parte: Cálculo das órbitas (em Python) - Encontra o local exato de onde estará qualquer planeta numa data ou num periodo de datas: https://github.com/HelioGiroto/orbitas/blob/master/1-calcula_orbita.py  - Em Python
 
