@@ -12,7 +12,7 @@ O programa está na versão BETA (testes) e faz o cálculo das órbitas dos plan
 2a. parte: Faz uma filtragem (peneira) para coletar somente as ocasiões em que os planetas estarão como em 23/09/2017:
 https://github.com/HelioGiroto/orbitas/blob/master/2-localiza_constelacao.sh   - Em Shell Script
 
-3a. parte: Compara todos os planetas envolvidos no evento de 23/09/2017 para descubrir quando se repete o mesmo alinhamento.
+3a. parte: Compara todos os planetas envolvidos no evento de 23/09/2017 para descobrir quando se repete o mesmo alinhamento.
 https://github.com/HelioGiroto/orbitas/blob/master/3-compara_localizacoes.sh   - Em Shell Script
 
 4a. parte: Encontra os anos em comúm em que o Rosh Hashana e o Muharram caem num mesmo dia (em 2400 anos):
