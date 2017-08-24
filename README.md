@@ -18,6 +18,7 @@ https://github.com/HelioGiroto/orbitas/blob/master/3-compara_localizacoes.sh   -
 
 4a. parte: Encontra os anos em comúm em que o Rosh Hashana e o Muharram caem num mesmo dia (em 2400 anos):
 https://github.com/HelioGiroto/orbitas/blob/master/4-AnoNovoJudeuMuculmano.sh  - Em Shell Script
+(Este programa é auto-instalador, ou seja, na 1a. vez que é acessado faz sua própria instalação, e a partir da 2a. vez será executado normalmente).
 
 Um video explicativo sobre como faço a pesquisa e cruzamento dos dados num periodo de 7000 anos você pode ver em breve aqui:
 https://www.youtube.com/c/heliogiroto - Inscreva-se no canal!
