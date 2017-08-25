@@ -160,3 +160,6 @@ echo
 instalador	# A partir da 2a.vez que abra esse script, essa linha estará comentada!!! Para executá-lo como da primeira vez, basta apagar o símbolo # do INICIO dessa linha (caso tenha).
 
 calculo
+
+								
+												# Autor: Helio Giroto
