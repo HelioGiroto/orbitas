@@ -27,4 +27,4 @@ H.G.C.
 
 
 ![Licenca](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square "Sob Licença MIT")
-[Licenca](https://github.com/HelioGiroto/orbitas/blob/master/LICENSE)
+[Licença](https://github.com/HelioGiroto/orbitas/blob/master/LICENSE)
