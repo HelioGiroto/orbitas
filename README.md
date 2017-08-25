@@ -24,7 +24,4 @@ https://www.youtube.com/c/heliogiroto - Inscreva-se no canal!
 
 H.G.C.
 
-
-
-![Licenca](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square "Sob Licença MIT")
-[Licença](https://github.com/HelioGiroto/orbitas/blob/master/LICENSE)
+<a href="https://github.com/HelioGiroto/orbitas/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="Licença"></a> 
