@@ -24,4 +24,4 @@ https://www.youtube.com/c/heliogiroto - Inscreva-se no canal!
 
 H.G.C.
 
-<a href="https://github.com/HelioGiroto/orbitas/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="Licença"></a> 
+<a href="https://github.com/HelioGiroto/orbitas/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="Licença"></a> 
