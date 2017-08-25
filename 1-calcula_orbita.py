@@ -170,7 +170,7 @@ while True:
 		dd  = data[0:2]				# Separa da data apenas o número do DIA
 		mm  = data[3:5]				# Separa da data apenas o número do MÊS
 		aaaa= data[6:]				# Separa da data apenas o número do ANO
-		dia = ephem.Date(aaaa+"/"+mm+"/"+dd)	# Data de inicio dos cálculo
+		dia = ephem.Date(aaaa+"/"+mm+"/"+dd)	# Data de inicio dos cálculos
 
 
 		print("\nQuer o resultado na TELA ou gravado em ARQUIVO ?? (T ou A?)??")
