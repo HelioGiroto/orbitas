@@ -17,7 +17,7 @@ echo 			# Linha em branco
 
 # INICIA AS COMPARACOES - JUPITER COM LUA (Um a um seria assim):
 	# comm -12 Jupiter_em_Virgo.dat Lua_em_Virgo.dat > JL.dat	# Compara os dois arquivos (localizacao dos 2 planetas)
-	# cat JL.dat | sort -nr -k1 -k2 -k3 > _JL.dat	# Ordena (SORT) Numerica e Reversam. (Descendente) começa do 1o campo, 2o e 3o.
+	# cat JL.dat | sort -nr -k1 -k2 -k3 > _JL.dat	# Ordena* (SORT) Numerica e Reversam. (Descendente) (*ver pq na linha 48) começa do 1o campo, 2o e 3o.
 	# rm JL.dat
 	# mv _JL.dat > JL.dat
 
