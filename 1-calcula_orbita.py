@@ -36,7 +36,7 @@ while True:
 					dia -= 1		# Neste caso, diminui um dia ATÉ chegar no núm total do laço de dias.
 	
 		arq.close()
-		echo "Arquivo",nome+".csv foi criado"					# Nunca esquecer de fechar arquivo...
+		print ("Arquivo",nome+".csv foi criado")					# Nunca esquecer de fechar arquivo...
 		finaliza()
 
 	def imprime_tela(planeta, nome, dia, anos, dias, tipo_de_calculo):
