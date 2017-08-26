@@ -176,7 +176,7 @@ while True:
 		print("\nQuer o resultado na TELA ou gravado em ARQUIVO ?? (T ou A?)??")
 		resp=input()
 
-		if resp == "T" or resp == "t":
+		if resp == "T" or resp == "t" or resp == "":
 			imprime_tela(planeta, nome, dia, anos, dias, tipo_de_calculo)
 		else:
 			imprime_arq(planeta, nome, dia, anos, dias, tipo_de_calculo)
