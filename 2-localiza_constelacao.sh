@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# SOMENTE PARA AS ÓRBITAS DE ANOS ANTES DE CRISTO
-
 # GERANDO OS ARQUIVOS FILTRADOS:
+# Feito em Bash, AWK e SED...
 
 echo
 echo "Este programa vai filtrar (peneirar) as órbitas para saber quando cada planeta estará aproximadamente na mesma posição como a do dia 23/09/2017"
