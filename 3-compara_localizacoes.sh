@@ -2,7 +2,7 @@
 clear
 
 # IMPORTANTE: Uso neste script o comando COMM, que faz comparações entre dois arquivos e mostra a intercessão (similitudes, coisas em COMMúm!) entre eles. É justam. o contrário de DIFF!
-# Mas para que ele funcione, é preciso antes ordenar os arquivos com SORT, mas SEM nenhum parâmetro. ver linha 15:
+# Mas para que ele funcione, é preciso antes ordenar os arquivos com SORT, mas SEM nenhum parâmetro. ver linha 11:
 
 # MANIPULA TODOS OS ARQUIVOS (gerados no script anterior) ANTES DE COMPARAR:
 for arquivo in *.dat
