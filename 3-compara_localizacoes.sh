@@ -17,7 +17,7 @@ echo 			# Linha em branco
 
 # INICIA AS COMPARACOES - JUPITER COM LUA (Um a um seria assim):
 	# comm -12 Jupiter_em_Virgo.dat Lua_em_Virgo.dat > JL.dat	# Compara os dois arquivos (localizacao dos 2 planetas)
-	# cat JL.dat | sort -nr -k1 -k2 -k3 > _JL.dat	# Ordena* (SORT) Numerica e Reversam. (Descendente) (*ver pq na linha 48) começa do 1o campo, 2o e 3o.
+	# cat JL.dat | sort -nr -k1 -k2 -k3 > _JL.dat	# Ordena (SORT) Numerica e Reversam. (Descendente) começa do 1o campo, 2o e 3o.
 	# rm JL.dat
 	# mv _JL.dat > JL.dat
 
@@ -38,7 +38,7 @@ echo -n "Buscando as localizações em comúm entre os astros: Júpiter" 	# para
 # Inicia o laço para simplesmente usar o comando COMM para cada par de arquivos:
 for n in $(seq 0 5)
 do
-	echo -n " e" ${planeta[$n+1]}	# Estética do pgm (na tela) - Imprime cada item do array planeta (linha 30)
+	echo -n " e" ${planeta[$n+1]}	# Estética do pgm (na tela)
 	comm -12 ${arq[$n]} ${novo_arq[$n]} > ${novo_arq[$n+1]} 2>/dev/null	# Compara itens das duas listas e direciona resultado para o próximo item da 2a.lista
 	sleep 1				# Os sleep's são apenas para efeito visual...
 done
