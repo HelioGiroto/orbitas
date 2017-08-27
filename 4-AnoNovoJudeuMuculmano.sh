@@ -27,7 +27,7 @@ function instalador {
 		sleep 3
 		sudo apt-get install -y hdate
 		sudo apt-get install -y itools
-		sed -i 's/^instalador/#instalador/' 4-AnoNovoJudeuMuculmano.sh		# Nome desse script.
+		sed -i 's/^instalador/#instalador/' AnoNovoJudeuMuculmano.sh		# Nome desse script.
 		echo
 	else
 		echo
@@ -37,31 +37,27 @@ function instalador {
 }
 
 
-function finaliza {
+function compara {
 	echo "Deseja que faça as comparações entre os dois arquivos ? (s/n)"
 	read resp
 
 	if [[ "$resp" == "S" || "$resp" == "s" ]]
 	then
-		for linha in $(cat muculmano.txt)
-		do
-			grep "$linha" judeu.txt >> datas_c.txt 2>/dev/null
-		done
+		sort muculmano.txt > sort_m.txt
+		sort judeu.txt > sort_j.txt
+		comm -12 sort_m.txt sort_j.txt > comum.txt		
+		sort -n -k3 comum.txt > ano_novo_comum.txt
+
+		rm sort* comum*
 	else
 		exit
 	fi
-	
-	cat datas_c.txt | uniq > datas_comum.txt	# Só para garantir o funcionamento
-	rm datas_c.txt					# só para garantir o funcionamento
 
-	# Se quiser para terminar, pode-se fazer o inverso do SED final da funcao calculo, i.é:
-	# sed 's/_/ /g' datas_comun.txt
-
-	nro_ocorrencias=$(cat datas_comum.txt | wc -l)
+	nro_ocorrencias=$(cat ano_novo_comum.txt | wc -l)
 
 	echo 
 	echo "Foram encontradas $nro_ocorrencias ocorrências em comúm num periodo de quase 2400 anos!"
-	echo "O arquivo chamado -- datas_comum.txt -- traz essas datas em comúm até 3017 dC"
+	echo "O arquivo chamado -- ano_novo_comum.txt -- traz essas datas em comúm até 3000 dC"
 	echo 
 }
 
@@ -84,8 +80,8 @@ function calculo {
 	echo "Gerando arquivos..."
 	echo
 
-	echo "ANO NOVO MUÇULMANO - Muharram (de 622 até 3017):" >> muculmano.txt
-	for ano in $(seq 1 2439)		# 1439 = 2017
+	echo "ANO NOVO MUÇULMANO - Muharram (de 622 até 3000):" > muculmano.txt
+	for ano in $(seq 1 2452)		# 1439 = 2017
 	do 
 		resto=$((ano%32))				# Detalhe gráfico para os pontinhos...
 		if [[ $resto -eq 0 ]];then echo -n ">";fi	# 
@@ -106,24 +102,24 @@ function calculo {
 		# Abaixo: Tente apagar o último comando depois do último pipe para ver o efeito.... Em vez de $ano, digite 14390101
 
 
-		dia_o=$(ical -hi $ano -d | grep -Eo "01\/.." | cut -d'/' -f2)
-		mes_o=$(ical -hi $ano -d | grep -E "From" | cut -d"/" -f3| cut -d" " -f2)
-		ano_o=$(ical -hi $ano -d | grep -E "From" | grep -Eo "[0-9]+)" | cut -d")" -f1)
+		dia_m=$(ical -hi $ano -d | grep -Eo "01\/.." | cut -d'/' -f2)
+		mes_m=$(ical -hi $ano -d | grep -E "From" | cut -d"/" -f3| cut -d" " -f2)
+		ano_m=$(ical -hi $ano -d | grep -E "From" | grep -Eo "[0-9]+)" | cut -d")" -f1)
 
-		echo $dia_o $mes_o $ano_o >> muculmano.txt
+		echo $dia_m $mes_m $ano_m >> muculmano.txt
 	done 
 
 	echo
 	echo "Foi criado um arquivo de nome: -- muculmano.txt --"
-	echo "com a data de cada ano novo muculmano até o ano 3017"
+	echo "com a data de cada ano novo muçulmano até o ano 3000"
 	echo 
 		
 
 	#	CÁLCULO DO ANO NOVO JUDEU: 
 	
-	echo "FESTAS DAS TROMBETAS - Rosh Hashana (do ano 1 ao 3017):" >> judeu.txt
+	echo "FESTAS DAS TROMBETAS - Rosh Hashana (do ano 1 ao 3000):" > judeu.txt
 
-	for ano in $(seq 1 3017)
+	for ano in $(seq 1 3000)
 	do
 
 		resto=$((ano%40))				# Detalhe gráfico para os pontinhos...
@@ -137,15 +133,12 @@ function calculo {
 	sed -i 's/Septiembre/September/g; s/Setembro/September/g; s/Agosto/August/g; s/Octubre/October/g; s/Outubro/October/g' judeu.txt	
 	# Acima: É preciso traduzir de português (ou espanhol) para inglês os nomes dos meses.
 
-	sed -i 's/ /_/g' judeu.txt muculmano.txt 	
-	# Se omitimos essa linha acima, o GREP (na funcao finaliza) terá falho de operação e criará arq enormes. Pelos espaços entre dd mm aaaa 
-
 	echo
 	echo "Foi criado um arquivo de nome: -- judeu.txt --"
-	echo "com a data de cada ano novo judeus de 1 até o ano 3017"
+	echo "com a data de cada ano novo judeus de 1 até o ano 3000"
 	echo
 
-	finaliza		# chama a última função
+	compara		# chama a última função
 
 }
 
@@ -160,6 +153,3 @@ echo
 instalador	# A partir da 2a.vez que abra esse script, essa linha estará comentada!!! Para executá-lo como da primeira vez, basta apagar o símbolo # do INICIO dessa linha (caso tenha).
 
 calculo
-
-								
-												# Autor: Helio Giroto
