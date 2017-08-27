@@ -1,5 +1,5 @@
 import ephem		# Instalar este módulo com PIP - Ver: https://pypi.python.org/pypi/pyephem/
-
+import time
 # Para entender melhor, vá para a última linha deste código e siga à primeira função que é chamada ali...
 
 while True:
@@ -68,7 +68,7 @@ while True:
 		print('---------------------------------------------')
 		print('  LOCALIZAÇÃO DOS PLANETAS NO SISTEMA SOLAR ' )
 		print('---------------------------------------------')
-		print('Escolha o número para calcular a órbita de:')
+		print(' Escolha o nro. para encontrar a posição de:')
 		print('  1 - Júpiter')
 		print('  2 - Marte')
 		print('  3 - Vênus')
@@ -118,7 +118,7 @@ while True:
 			menu()
 
 		print (nome, "escolhido!\n")
-
+		time.sleep (1)
 		print ("- A partir de que DATA ??? - Formato: dd/mm/aaaa")
 		print ("  ..Se for a data de HOJE, pressione ENTER.")
 		print ("  ..Se o DIA ou o MÊS for de 1 a 9, acrescente antes o núm. 0")
