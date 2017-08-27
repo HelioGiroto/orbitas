@@ -22,11 +22,13 @@ while True:
 				# ABAIXO: Variáveis com as propriedades do objeto: Data, em que constelação está, AR e DEC (localizacao)
 				data        = ephem.Date(dia)			
 				constelacao = ephem.constellation(planeta)
-				AR          = planeta.a_ra
-				DEC         = planeta.a_dec
+				AR_j2000    = planeta.a_ra
+				DEC_j2000   = planeta.a_dec
+				AR          = planeta.ra
+				DEC         = planeta.dec
 			
 				# Agora, grava no arquivo já aberto os dados acima definidos:
-				arq.write(str(data) + str(";") + str(constelacao) + str(";") + str(AR) + str(";") + str(DEC))
+				arq.write(str(data) + str(";") + str(constelacao) + str(";") + str(AR_j2000) + str(";") + str(DEC_j2000) + str(";") + str (AR) + str(";") + str(DEC))
 				arq.write('\n')
 			
 				# De acordo com a escolha do usuário, o prg vai avançar ou retroceder na data:
@@ -49,9 +51,11 @@ while True:
 				planeta.compute(dia)	
 				data=ephem.Date(dia)			
 				constelacao=ephem.constellation(planeta)
-				AR=planeta.a_ra
-				DEC=planeta.a_dec
-				print(data, "- Constel.:", constelacao, "- AR:", AR, "- DEC:", DEC)
+				AR_j2000    = planeta.a_ra
+				DEC_j2000   = planeta.a_dec
+				AR          = planeta.ra
+				DEC         = planeta.dec
+				print(data, "- Constel.:", constelacao, "- AR(J2000):", AR_j2000, "- DEC(J2000):", DEC_j2000, "- AR:", AR, "- DEC:", DEC)
 				if tipo_de_calculo=="avanza":
 					dia += 1
 				else:
@@ -170,7 +174,7 @@ while True:
 		dd  = data[0:2]				# Separa da data apenas o número do DIA
 		mm  = data[3:5]				# Separa da data apenas o número do MÊS
 		aaaa= data[6:]				# Separa da data apenas o número do ANO
-		dia = ephem.Date(aaaa+"/"+mm+"/"+dd)	# Data de inicio dos cálculos
+		dia = ephem.Date(aaaa+"/"+mm+"/"+dd)	# Data de inicio dos cálculo
 
 
 		print("\nQuer o resultado na TELA ou gravado em ARQUIVO ?? (T ou A?)??")
@@ -183,4 +187,4 @@ while True:
 
 	menu()
 
-										# Autor: Helio Giroto - www.heliogiroto.com
+# Autor: Helio Giroto - www.heliogiroto.com
