@@ -119,9 +119,11 @@ while True:
 
 		print (nome, "escolhido!\n")
 
-		print ("A partir de que DATA ??? - Formato: dd/mm/aaaa *")
-		print ("  ...... (*Obs.: Se o DIA ou o MÊS for de 1 a 9, acrescente antes o número 0. Ex.: 05/09/2017)")
-		print ("  .............. Se for a data de HOJE, simplesmente pressione ENTER.")
+		print ("- A partir de que DATA ??? - Formato: dd/mm/aaaa")
+		print ("  ..Se for a data de HOJE, pressione ENTER.")
+		print ("  ..Se o DIA ou o MÊS for de 1 a 9, acrescente antes o núm. 0")
+		print ("    (Ex.: 05/09/2017)")
+
 		data=input()
 
 		# Caso o usuário apenas press. ENTER, teremos manipular para data atual do local:
@@ -134,9 +136,10 @@ while True:
 			# Acima: Troca de aaaa/mm/dd hh:mm:ss para dd/mm/aaaa - Fazendo o SLICE e atribuindo à variável inicial! .... uff.....
 	
 		print ()
-		print ("Durante quantos ANOS ???")
-		print (" .......Digite 0 ou ENTER - Se NÃO chega a um ano.") 
-		print (" .......Se quer a pesquisa RETRÓGRADA, colocar sinal de menos (-) antes do núm. Ex.: -100 (para 100 anos antes)")
+		print ("- Durante quantos ANOS ???")
+		print ("  ..Digite 0 ou ENTER - Se NÃO chega a um ano.") 
+		print ("  ..Se a pesquisa é RETRÓGRADA, coloque sinal de menos (-) antes do núm.") 
+		print ("    Ex.: -100 (para 100 anos antes)")
 		anos=input()
 	
 		# Verifica se tem o sinal negativo antes do número.
@@ -151,8 +154,9 @@ while True:
 		# Verifica se o usuário apenas press. ENTER ou digitou 0 em ANOS:
 		if anos=="0" or anos=="":
 			anos=1
-			print ("\nDurante quantos DIAS ???")		# Só pergunta quantos DIAS se o ano = 0 ou ano = 1.
-			print (" ........Digite 1 ou ENTER se a pesquisa é apenas para UM DIA // Se quer a pesquisa retrógrada, digitar sinal (-) antes do núm.")
+			print ("\n- Durante quantos DIAS ???")		# Só pergunta quantos DIAS se o ano = 0 ou ano = 1.
+			print ("  ..Digite 1 ou ENTER se a pesquisa é apenas para UM DIA")
+			print ("  ..Se a pesquisa é RETRÓGRADA, digite (-) antes do núm.")
 			dias=input()
 
 			# Valida a entrada que o usuário escolheu:
@@ -177,7 +181,7 @@ while True:
 		dia = ephem.Date(aaaa+"/"+mm+"/"+dd)	# Data de inicio dos cálculo
 
 
-		print("\nQuer o resultado na TELA ou gravado em ARQUIVO ?? (T ou A?)??")
+		print("\n- Quer o resultado na TELA ou gravado em ARQUIVO ?? (T ou A?)??")
 		resp=input()
 
 		if resp == "T" or resp == "t" or resp == "":
